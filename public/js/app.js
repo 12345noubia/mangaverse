@@ -356,14 +356,14 @@ function loadGenresPage() {
 }
 
 const GENRE_EMOJIS = {
-  'Action': '⚔️', 'Adventure': '🗺️', 'Comedy': '😂', 'Drama': '🎭',
-  'Fantasy': '🧙', 'Horror': '👻', 'Mystery': '🔍', 'Romance': '❤️',
-  'Sci-Fi': '🚀', 'Slice of Life': '🌸', 'Sports': '⚽', 'Thriller': '😱',
-  'Supernatural': '✨', 'Psychological': '🧠', 'Mecha': '🤖', 'Music': '🎵',
-  'Historical': '📜', 'Medical': '⚕️', 'Philosophical': '💭', 'Tragedy': '😢',
-  'Martial Arts': '🥋', 'Isekai': '🌀', 'Harem': '💕', 'Cooking': '🍜',
-  'Game': '🎮', 'School Life': '📚', 'Military': '🎖️', 'Magic': '🪄',
-  'Monsters': '👾', 'Survival': '🏕️',
+  'Action': '<i data-lucide="zap"></i>', 'Adventure': '<i data-lucide="map"></i>', 'Comedy': '<i data-lucide="smile"></i>', 'Drama': '<i data-lucide="theater"></i>',
+  'Fantasy': '<i data-lucide="wand"></i>', 'Horror': '<i data-lucide="skull"></i>', 'Mystery': '<i data-lucide="search"></i>', 'Romance': '<i data-lucide="heart"></i>',
+  'Sci-Fi': '<i data-lucide="rocket"></i>', 'Slice of Life': '<i data-lucide="cherry"></i>', 'Sports': '<i data-lucide="target"></i>', 'Thriller': '<i data-lucide="alert-triangle"></i>',
+  'Supernatural': '<i data-lucide="sparkles"></i>', 'Psychological': '<i data-lucide="brain"></i>', 'Mecha': '<i data-lucide="bot"></i>', 'Music': '<i data-lucide="music"></i>',
+  'Historical': '<i data-lucide="scroll"></i>', 'Medical': '<i data-lucide="stethoscope"></i>', 'Philosophical': '<i data-lucide="lightbulb"></i>', 'Tragedy': '<i data-lucide="frown"></i>',
+  'Martial Arts': '<i data-lucide="fighter"></i>', 'Isekai': '<i data-lucide="shuffle"></i>', 'Harem': '<i data-lucide="users"></i>', 'Cooking': '<i data-lucide="chef-hat"></i>',
+  'Game': '<i data-lucide="gamepad-2"></i>', 'School Life': '<i data-lucide="graduation-cap"></i>', 'Military': '<i data-lucide="shield"></i>', 'Magic': '<i data-lucide="magic-wand"></i>',
+  'Monsters': '<i data-lucide="monster"></i>', 'Survival': '<i data-lucide="compass"></i>',
 };
 
 function renderGenresPage() {

@@ -1030,43 +1030,91 @@ body {
 .empty-state p { font-size: 0.9rem; }
 
 /* ══════════════ RESPONSIVE ══════════════ */
+@media (max-width: 1400px) {
+  .hero-content { max-width: 700px; }
+  .manga-grid { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); }
+}
 @media (max-width: 1200px) {
   .hero-content { max-width: 600px; }
   .manga-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
 }
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .header-nav { display: none; }
   .hamburger { display: flex; }
   .search-input { width: 160px; }
   .hero-float-cards { display: none; }
   .detail-body { grid-template-columns: 1fr; }
   .detail-cover { width: 150px; }
-  .detail-hero-inner { gap: 20px; }
+  .manga-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+  .genre-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+@media (max-width: 900px) {
+  .hero-section { padding: 40px 20px 50px; }
+  .hero-title { font-size: clamp(2rem, 5vw, 2.5rem); }
+  .hero-sub { font-size: clamp(1rem, 3vw, 1.1rem); }
   .manga-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .genre-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  .page-header { padding: 20px 16px 12px; }
+  .detail-hero { padding: 20px 16px; }
+  .detail-body { padding: 16px; }
+}
+@media (max-width: 768px) {
+  .search-input { width: 140px; }
+  .manga-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .genre-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+  .manga-card-title { font-size: 0.9rem; }
+  .genre-card-name { font-size: 0.85rem; }
 }
 @media (max-width: 640px) {
   .search-input { width: 120px; }
-  .hero-section { padding: 50px 16px 60px; }
-  .page-header { padding: 24px 16px 16px; }
-  .manga-grid, .manga-grid.manga-grid-large { padding: 0 16px; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
-  .genre-grid { padding: 0 16px 32px; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
-  .detail-hero { padding: 24px 16px; }
-  .detail-hero-inner { flex-direction: column; align-items: center; text-align: center; }
-  .detail-cover { width: 160px; }
-  .detail-stats { justify-content: center; }
-  .detail-tags, .detail-actions { justify-content: center; }
-  .detail-body { padding: 20px 16px 32px; }
+  .hero-section { padding: 30px 16px 40px; }
+  .page-header { padding: 16px; }
+  .manga-grid, .manga-grid.manga-grid-large { padding: 0 12px; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+  .genre-grid { padding: 0 12px 24px; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); }
+  .detail-hero { padding: 16px; }
+  .detail-hero-inner { flex-direction: column; align-items: center; text-align: center; gap: 16px; }
+  .detail-cover { width: 140px; }
+  .detail-stats { justify-content: center; flex-wrap: wrap; }
+  .detail-tags, .detail-actions { justify-content: center; flex-wrap: wrap; }
+  .detail-body { padding: 16px; }
   .reader-mode-select { display: none; }
-  .mobile-menu { padding: 16px; }
+  .mobile-menu { padding: 12px; }
+  .mobile-menu button { font-size: 1rem; padding: 12px; }
+  .manga-card-title { font-size: 0.85rem; line-height: 1.2; }
+  .genre-card-name { font-size: 0.8rem; }
+  .empty-state h3 { font-size: 1.2rem; }
+  .empty-state p { font-size: 0.9rem; }
 }
 @media (max-width: 480px) {
-  .hero-title { font-size: 2rem; }
-  .hero-sub { font-size: 1rem; }
+  .hero-title { font-size: clamp(1.8rem, 6vw, 2rem); }
+  .hero-sub { font-size: clamp(0.9rem, 4vw, 1rem); }
   .manga-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
   .genre-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
-  .detail-cover { width: 140px; }
+  .detail-cover { width: 120px; }
   .header-logo span { display: none; }
-  .search-wrap { flex: 1; }
+  .search-wrap { flex: 1; margin: 0 8px; }
+  .search-input { width: 100%; max-width: 200px; }
+  .manga-card-title { font-size: 0.8rem; }
+  .genre-card-name { font-size: 0.75rem; }
+  .page-title { font-size: 1.5rem; }
+  .section-title { font-size: 1.2rem; }
+  .btn-primary, .btn-ghost { padding: 10px 16px; font-size: 0.9rem; }
+  .mobile-menu button { padding: 10px; font-size: 0.9rem; }
+  .empty-state { padding: 20px; }
+  .empty-state h3 { font-size: 1.1rem; }
+  .empty-state p { font-size: 0.85rem; }
+}
+@media (max-width: 360px) {
+  .hero-section { padding: 20px 12px 30px; }
+  .manga-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+  .genre-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); }
+  .detail-cover { width: 100px; }
+  .manga-card-title { font-size: 0.75rem; }
+  .genre-card-name { font-size: 0.7rem; }
+  .page-title { font-size: 1.3rem; }
+  .section-title { font-size: 1.1rem; }
+  .btn-primary, .btn-ghost { padding: 8px 12px; font-size: 0.85rem; }
+  .mobile-menu button { padding: 8px; font-size: 0.85rem; }
 }
 @media (min-width: 1400px) {
   .hero-content { max-width: 800px; }
