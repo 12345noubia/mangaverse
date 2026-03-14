@@ -913,6 +913,57 @@ body {
 }
 #currentPage { color: var(--cyan); font-weight: 600; }
 
+/* Reader Responsive */
+@media (max-width: 768px) {
+  .reader-topbar { padding: 0 12px; height: 48px; }
+  .reader-back { font-size: 0.8rem; }
+  .reader-back svg { width: 16px; height: 16px; }
+  .reader-title { font-size: 0.8rem; }
+  .reader-chapter { font-size: 0.68rem; }
+  .reader-controls { gap: 6px; }
+  .reader-btn { width: 32px; height: 32px; }
+  .reader-btn svg { width: 14px; height: 14px; }
+  .reader-mode-select { font-size: 0.75rem; padding: 4px 8px; }
+  .reader-container { padding: 8px 0; }
+  .reader-container.mode-single, .reader-container.mode-double { padding: 8px; }
+  .reader-page-img { max-width: 100%; margin: 0 0 4px 0; }
+  .reader-page-img.mode-single { max-width: 100%; }
+  .reader-page-img.mode-double { max-width: calc(50% - 2px); margin: 0 1px; }
+  .reader-bottombar { padding: 6px 12px; }
+  .reader-nav-btn { padding: 6px 12px; font-size: 0.8rem; }
+  .reader-nav-btn svg { width: 14px; height: 14px; }
+  .reader-page-info { font-size: 0.8rem; }
+}
+@media (max-width: 480px) {
+  .reader-topbar { padding: 0 8px; height: 44px; gap: 8px; }
+  .reader-info { flex: 1; }
+  .reader-title { font-size: 0.75rem; }
+  .reader-chapter { font-size: 0.65rem; }
+  .reader-controls { gap: 4px; }
+  .reader-btn { width: 30px; height: 30px; }
+  .reader-btn svg { width: 12px; height: 12px; }
+  .reader-mode-select { display: none; } /* Hide on very small screens */
+  .reader-container { padding: 4px 0; }
+  .reader-container.mode-single, .reader-container.mode-double { padding: 4px; }
+  .reader-page-img { margin: 0 0 2px 0; }
+  .reader-page-img.mode-double { max-width: calc(50% - 1px); margin: 0 0.5px; }
+  .reader-bottombar { padding: 4px 8px; gap: 8px; }
+  .reader-nav-btn { padding: 4px 8px; font-size: 0.75rem; }
+  .reader-nav-btn svg { width: 12px; height: 12px; }
+  .reader-page-info { font-size: 0.75rem; }
+}
+@media (max-width: 360px) {
+  .reader-topbar { height: 40px; }
+  .reader-back { font-size: 0.75rem; }
+  .reader-title { font-size: 0.7rem; }
+  .reader-chapter { font-size: 0.6rem; }
+  .reader-btn { width: 28px; height: 28px; }
+  .reader-btn svg { width: 10px; height: 10px; }
+  .reader-nav-btn { padding: 3px 6px; font-size: 0.7rem; }
+  .reader-nav-btn svg { width: 10px; height: 10px; }
+  .reader-page-info { font-size: 0.7rem; }
+}
+
 /* ══════════════ LOADING / SPINNER ══════════════ */
 .loading-row {
   grid-column: 1 / -1; display: flex; justify-content: center;
